@@ -1,0 +1,154 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #E5E5E5;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+
+.container {
+    max-width: 200px;
+}
+
+.content > .info-bg {
+    background: #5200FF;
+    opacity: 1;
+}
+
+/*
+.content > .info-bg > .info {
+    background: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .22;
+}
+*/
+
+.info-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p.title {
+    color: white;
+    font-size: 1rem;
+    font-weight: 550;
+    line-height: 119.7%;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+p.title:first-child {
+    padding-top: 2rem;
+}
+
+p.description {
+    color: white;
+    font-size: .6rem;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: .6rem;
+    padding-bottom: 2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    background-color: white;
+    margin-top: -.6rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.form input {
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+
+.form label {
+    font-size: .6rem;
+    margin-bottom: .5rem;
+}
+
+.submit {
+    margin-top: .5rem;
+    background: #5200FF;
+    font-size: .6rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    color: white;
+}
+
+.all_inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.name_input {
+    display: flex;
+    flex-direction: column;
+}
+
+.email_input {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 600px) {
+    .container {
+        max-width: 500px;
+    }
+    
+    .all_inputs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .all_inputs > * {
+        margin-right: 1rem;
+    }
+
+    .submit {
+        max-width: 30%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .container {
+        max-width: 800px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content > * {
+        flex-basis: 100%;
+        flex: 1 1 0px;
+    }
+
+    .form {
+        margin-top: 0;
+    }
+
+    .content {
+        min-height: 300px;
+    }
+}
